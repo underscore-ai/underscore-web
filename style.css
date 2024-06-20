@@ -1,0 +1,92 @@
+body {
+    font-size: 20px;
+    background-color: whitesmoke;
+    color: black;
+    margin: 0;
+    margin: 40px auto;
+    max-width: 650px;
+    padding: 0 10px;
+    font-family: 'SF Mono', monospace;
+}
+/* Dark theme styles */
+/* body.dark-theme {
+    background-color: black;
+    color: whitesmoke;
+} */
+
+hr {
+    background-color: lightslategrey;
+    border-width: 0px;
+    height: 1px;
+}
+
+body.dark-theme hr {
+    background-color: lightcyan;
+    border-width: 0px;
+    height: 1px;
+}
+
+body.dark-theme {
+    background-color: #121212; /* Deep gray for a softer dark background */
+    color: whitesmoke; /* Light gray for text, softer than whitesmoke */
+}
+
+a {
+    color: green; /* Match the body text color */
+    text-decoration: none; /* Optional: removes underline from links */
+}
+
+a:hover {
+    color: #0aa220; /* Light purple color for hover state */
+}
+
+body.dark-theme a {
+    color: lightgreen; /* Changes link color to white in dark mode */
+}
+
+body.dark-theme a:hover {
+    color: green; /* Light purple color for hover state */
+}
+
+/* Toggle button styles */
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 30px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.toggle-btn.dark-theme {
+    background-color: #333;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+h1,
+h2,
+p {
+    text-align: left;
+}
+
+img,
+video,
+iframe,
+audio {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 100%;
+} 
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}
